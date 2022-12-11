@@ -12,7 +12,7 @@ public class SmallTool {
         String mess = new StringJoiner("\t")
                 .add(String.valueOf(System.currentTimeMillis()))
                 .add(String.valueOf(Thread.currentThread().getName()))
-                .add(String.valueOf(Thread.currentThread().getName()))
+                .add(String.valueOf(Thread.currentThread().getId()))
                 .add(message).toString();
         System.out.println(mess);
     }
